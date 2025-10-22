@@ -400,7 +400,7 @@ param_col1, param_col2 = st.columns(2)
 with param_col1:
     N = st.slider("Tamaño de Ventana (N)", 10, 200, 50, help="Número de muestras para calcular el RMS móvil")
 with param_col2:
-    k = st.slider("Factor de Umbral (k)", 1.0, 15.0, 5.0, 0.5, help="Multiplicador del RMS base para definir el umbral de detección")
+    k = st.slider("Factor de Umbral (k)", 0.1, 15.0, 5.0, 0.1, help="Multiplicador del RMS base para definir el umbral de detección")
 
 st.markdown("---")
 
